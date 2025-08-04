@@ -16,6 +16,9 @@ In addition to the application, the project includes a detailed data analysis do
 ## 2. Project Structure
 
 ```
+analysis/
+    data_analyst_task.ipynb  # Data analysis and model development
+    presentation.pdf         # Summary presentation of analysis and results
 app/
     api/
         predict.py           # API endpoint for transaction prediction
@@ -27,19 +30,17 @@ app/
         transaction.py       # Pydantic schemas for API
     static/
         css/
-            transactions.css   # Dashboard styles
+            transactions.css # Dashboard styles
         js/
-            transactions.js    # Dashboard logic
+            transactions.js  # Dashboard logic
     templates/
         transactions.html    # Dashboard HTML
-    db.py                  # Database models and session
-    main.py                # FastAPI app entrypoint
-    run.py                 # Script to run the server
-data/
-    antifraud.db           # SQLite database (created at runtime)
-analysis/
-    data_analyst_task.ipynb # Data analysis and model development
-    presentation.pdf        # Summary presentation of analysis and results
+    db.py                    # Database models and session
+    main.py                  # FastAPI app entrypoint
+    run.py                   # Script to run the server
+data/                        # SQLite database (created at runtime) and CSV (simulated data)     
+models/                      # Saved machine learning models (.pkl, etc.)
+scripts/                     # Utility scripts (retrain_model.py, simulate.py, etc.)
 ```
 
 ## 3. Features
