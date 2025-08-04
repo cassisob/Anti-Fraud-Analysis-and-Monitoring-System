@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring System</title>
+
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="/static/css/transactions.css?v=1">
+    <script src="/static/js/transactions.js?v=1"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="charts">
+            <div class="chart-box">
+                <div class="plot-container" id="plotTipo1"></div>
+            </div>
+            <div class="chart-box">
+                <div class="plot-container" id="plotTipo2"></div>
+            </div>
+            <div class="chart-box">
+                <div class="plot-container" id="plotTipo3"></div>
+            </div>
+        </div>
+    </div>
+    <div id="info">
+        <p style="font-size: 2vw;font-weight: bold;text-align: center;">Real Time Issues/Problems Transactions</p>
+        <div class="table">
+            <h2>Number of Transactions in the Period by Status</h2>
+            <table>
+                <tr>
+                    <th>Status</th>
+                    <th>Quantity</th>
+                </tr>
+                <tr>
+                    <td>Approve</td>
+                    <td id="qtdApprove">0</td>
+                </tr>
+                <tr>
+                    <td>Deny (Model)</td>
+                    <td id="qtdDenyModel">0</td>
+                </tr>
+                <tr>
+                    <td>Deny (Rule)</td>
+                    <td id="qtdDenyRule">0</td>
+                </tr>
+                <tr>
+                    <td><b>Overall</b></td>
+                    <td id="totalQtd">0</td>
+                </tr>
+            </table>
+        </div>
+        <div class="trend-container">
+            <h1>Recent Data Trends by Status</h1>
+            <div style="display: flex;align-items: center;justify-content: center;">
+                <div class="trend">
+                    <h1 class="sub-title">Approve</h1>
+                    <i id="iconApprove" class="fa-solid fa-arrow-right fa-beat fa-xl"></i>
+                    <p id="trendApprove">Stable</p>
+                </div>
+                <div class="trend">
+                    <h1 class="sub-title">Deny (Model)</h1>
+                    <i id="iconDenyModel" class="fa-solid fa-arrow-right fa-beat fa-xl"></i>
+                    <p id="trendDenyModel">Stable</p>
+                </div>
+                <div class="trend">
+                    <h1 class="sub-title">Deny (Rule)</h1>
+                    <i id="iconDenyRule" class="fa-solid fa-arrow-right fa-beat fa-xl"></i>
+                    <p id="trendDenyRule">Stable</p>
+                </div>
+            </div>
+        </div>
+        <div class="trend-container">
+            <h1 class="sub-title">By Cassiano Sobierai</h1>
+            <p style="font-size:calc(1vh + 0.25vw);max-width:700px;margin:auto;text-align:center;">
+                This project is a real-time transaction monitoring system developed for risk analysis and trend tracking. It features interactive charts, transaction status statistics (Approved, Denied by Model, and Denied by Rule), and recent trends, enabling quick identification of potential issues or anomalies. The goal is to provide a clear and dynamic view of transaction flows, facilitating decision-making and risk management.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
