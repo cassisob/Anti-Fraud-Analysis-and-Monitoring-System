@@ -154,7 +154,7 @@ Or configure a scheduler to run it periodically.
 
 **`simulate.py`**  
 This script simulates the real-time ingestion of transaction data into the system.
-- It generates and sends synthetic transactions to the API/database, mimicking real-world transaction flows.
+- It sends synthetic transactions to the API/database, mimicking real-world transaction flows.
 - Useful for testing, stress-testing and demonstrating the dashboard and anti-fraud logic in action.
 
 **How to run simulation:**
