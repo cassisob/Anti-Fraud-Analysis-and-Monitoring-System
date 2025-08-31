@@ -191,7 +191,3 @@ For a real-world, production-grade anti-fraud system, a more robust and scalable
 
 - Add filter improvements in the dashboard route
 - Improve model retraining pipeline and monitoring.
-
-## 8. License
-
-This project is for technical assessment and demonstration purposes
